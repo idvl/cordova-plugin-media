@@ -265,6 +265,11 @@ BOOL keepAvAudioSessionAlwaysActive = NO;
             // Pass the AVPlayerItem to a new player
             avPlayer = [[AVPlayer alloc] initWithPlayerItem:playerItem];
 
+            #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+            //Avoid excessive buffering so streaming media can play instantly on iOS
+            avPlayer.automaticallyWaitsToMinimizeStalling = NO;
+            #endif
+
             //avPlayer = [[AVPlayer alloc] initWithURL:resourceUrl];
         }
 
