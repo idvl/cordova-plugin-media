@@ -6,7 +6,6 @@
   "cordova": {
     "id": "cordova-plugin-media",
     "platforms": [
-      "android",
       "browser",
       "ios",
       "windows"
@@ -23,7 +22,6 @@
     "cordova",
     "media",
     "ecosystem:cordova",
-    "cordova-android",
     "cordova-browser",
     "cordova-ios",
     "cordova-windows"
@@ -36,12 +34,6 @@
   "license": "Apache-2.0",
   "engines": {
     "cordovaDependencies": {
-      "3.0.0": {
-        "cordova-android": ">=6.1.0"
-      },
-      "4.0.0": {
-        "cordova-android": ">=6.3.0"
-      },
       "6.0.0": {
         "cordova": ">100"
       }
